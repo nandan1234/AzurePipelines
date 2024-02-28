@@ -1,0 +1,12 @@
+{
+	"name": "learndb1234_service",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=learndb1234.database.windows.net;initial catalog=learndb;user id=sqldbadmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVBN0UwQzQ0LTBGODMtNEZBRS04N0E3LUUxMzQzQzdENTA3MF9iZTBhYzI0Yy02OWE0LTQ1YTUtODNlNC1jOWQ3OTE5NjM5MDYiDQp9"
+		}
+	}
+}

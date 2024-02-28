@@ -1,0 +1,41 @@
+{
+	"name": "ConditionalSplit",
+	"properties": {
+		"activities": [
+			{
+				"name": "ConditionalSplit",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "splitcondition",
+						"type": "DataFlowReference"
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "learndb1_service",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "/staging"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-02-28T16:49:56Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

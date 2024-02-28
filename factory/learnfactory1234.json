@@ -1,0 +1,9 @@
+{
+	"name": "learnfactory1234",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c84beba5-99a4-40c1-b060-34125b978e96",
+		"tenantId": "9a4c651f-7961-4e11-99ad-32a58655e7df"
+	}
+}
